@@ -199,7 +199,7 @@ private:
     int m_a;
 };
 
-int main() {
+int main95() {
     cout << "在堆上分配复杂类型对象" << endl;
     //C
     //print 0 0
