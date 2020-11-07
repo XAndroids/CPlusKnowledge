@@ -7,7 +7,7 @@
 //定义变量b2
 int b2 = 20;
 
-int main() {
+int maingoto() {
     int a = 10;
     //do循环执行
     LOOP:
