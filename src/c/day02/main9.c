@@ -3,6 +3,9 @@
 //
 //指针
 //指针是一个特殊的变量(指针变量)，保存一个变量的内存地址
+//指针运算符*/&
+//指针值传递和引用传递
+//悬空指针和野指针
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,7 +19,7 @@ void swap(int, int);
 
 void swap2(int *, int *);
 
-int main() {
+int main9() {
 //    test_0();
 //    test_1();
 //    test_2();
