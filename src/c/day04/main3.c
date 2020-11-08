@@ -10,13 +10,14 @@ int call(int a, int b);
 
 int test3(int a, int b, int (*callback)(int, int));
 
-int main() {
+int main323() {
     //函数指针
     void (*p)(int);//定义函数指针类型p
     p = &test1;//p指向test1函数
     p(100);//通过函数指针p调用test1函数
 
     printf("test3 = %d\n", test3(1, 2, call));
+    return 0;
 }
 
 //函数指针调动
