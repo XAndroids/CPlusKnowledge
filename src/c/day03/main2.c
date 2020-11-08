@@ -5,7 +5,7 @@
 //数组名就是数组的起始地址，也是第一个元素的地址，数组名就是一个常量指针
 #include <stdio.h>
 
-int main() {
+int main211() {
     int array[] = {1, 2, 3, 4, 5};
     int *ptr_array = array;
     //数组名称、第一个元素是数组的第一个内存地址
