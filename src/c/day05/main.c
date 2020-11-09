@@ -1,7 +1,7 @@
 //
 // Created by QITMAC0000562 on 2020/11/9.
 //
-//字符串
+//字符串,折行、声明、输入、赋值、长度、拼接
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -103,5 +103,41 @@ int main577() {
     char *s4 = (char *) calloc(10, sizeof(char));
     scanf("%s", s4);
     printf("s4 = %s\n", s4);
+    return 0;
+}
+
+int main588() {
+    //字符串拷贝
+    char s1[] = "sb";
+    char *s5 = "he";
+    strcpy(s1, s5);//标准函数strcpy
+    printf("s1 = %s\n", s1);
+
+    char str[10] = "abc";
+    strncpy(str, "123455", 3);//strncpy标准函数，指定拷贝的长度3
+    printf("str = %s\n", str);
+    return 0;
+}
+
+int main599() {
+    //字符串比较
+    printf("%d\n", strcmp("abc", "abc"));//字符串比较，相等为0
+    printf("%d\n", strcmp("abc", "ab"));//字符串比较，相等为0
+    return 0;
+}
+
+int main51000() {
+    //字符串数组
+    char str[4][6] = {"adb", "ssdf", "dsf", "2343"};//字符串数组
+    char *str1[4] = {"sdfs", "sdf", "sdfs"};//字符指针的数组
+
+//    str[0] = "aaaaa";//str[0]表示一个一维数组的数组名称（常量），
+    strcpy(str[0], "aaaa");//strcpy进行赋值
+    printf("str[0] = %s\n", str[0]);
+
+    str1[0] = "sdfg";//次方式可以，str1[0]为一个指针，可重新赋值
+    printf("str1[0] = %s\n", str1[0]);
+//    strcpy(str1[0], "aaaa");
+//    printf("str1[0] = %s\n", str1[0]);
     return 0;
 }
