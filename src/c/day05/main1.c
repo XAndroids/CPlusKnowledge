@@ -10,7 +10,7 @@ struct Books {
     char title[10];
     char author[10];
     int book_id;
-} book = {"C语言基础", "zero", 2};//结构体初始化
+} book = {"C语言", "zero", 2};//结构体初始化
 
 int main5663() {
     struct Books book1;
