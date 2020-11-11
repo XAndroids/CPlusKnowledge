@@ -51,7 +51,7 @@ int main6666(int argc, char **argv) {
     return 0;
 }
 
-int main777() {
+int main() {
     FILE *p = fopen("/Users/qitmac0000562/CLionProjects/CPlusKnowledge/src/c/day06/test/f.txt", "w");
     if (p) {
         while (1) {
