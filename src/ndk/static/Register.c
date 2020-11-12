@@ -6,7 +6,7 @@
  * JNI静态注册
  * 参考： 享学一期《JNI开发之JNI编译与运行》
  */
-JNIEXPORT jstring JNICALL Java_com_java_xknowledge_se_jni_Register_HelloWorld
+JNIEXPORT jstring JNICALL Java_com_java_xknowledge_se_jni_static1_Register_HelloWorld
         (JNIEnv *env, jobject jobject) {
     return (*env)->NewStringUTF(env, "hello every body");
 }

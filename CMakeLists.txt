@@ -13,4 +13,4 @@ add_executable(CPlusKnowledge src/cplus/day01/main.cpp src/cplus/day01/main.cpp 
         src/c/day06/main4.c)
 
 #创建firstLib库
-add_library(firstLib SHARED src/ndk/Register.h src/ndk/Register.c)
+add_library(firstLib SHARED src/ndk/static/Register.h src/ndk/static/Register.c)
