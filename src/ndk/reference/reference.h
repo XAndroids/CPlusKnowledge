@@ -23,6 +23,12 @@ JNIEXPORT void JNICALL Java_com_java_xknowledge_se_jni_reference_Reference_callJ
 JNIEXPORT void JNICALL Java_com_java_xknowledge_se_jni_reference_Reference_callJavaInstanceMethod
         (JNIEnv *, jobject);
 
+
+JNIEXPORT jstring JNICALL Java_com_java_xknowledge_se_jni_reference_Reference_newString
+        (JNIEnv *, jobject, jint len);
+
+JNIEXPORT jstring JNICALL Java_com_java_xknowledge_se_jni_reference_Reference_JCallC(JNIEnv *env, jobject obj);
+
 #ifdef __cplusplus
 }
 #endif
