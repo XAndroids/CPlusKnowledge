@@ -20,5 +20,13 @@ JNIEXPORT jstring JNICALL Java_com_java_xknowledge_se_jni_invoke_Invoker_invoke
     jmethodID jtestMethod = (*env)->GetMethodID(env, testCls, "PrintfTest", "()V");
     (*env)->CallObjectMethod(env, testObj, jtestMethod);
 
-    return (*env)->NewStringUTF(env, "hello every body");
+    //GetFieldID获取Test的成员属性，GetFieldID获取FieldID，GetIntField根据FieldID获取属性，SetIntField社会执行
+    jfieldID jfid = (*env)->GetFieldID(env, testCls, "property", "I");
+    jint va = (*env)->GetIntField(env, jobject1, jfid);
+    printf("va: %d\n", va);
+    (*env)->SetIntField(env, jobject1, jfid, va + 10086);
+    jint va2 = (*env)->GetIntField(env, jobject1, jfid);
+    printf("va2: %d\n", va2);
+
+    return (*env)->NewStringUTF(env, "hello every body static");
 }
