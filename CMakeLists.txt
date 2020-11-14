@@ -10,8 +10,9 @@ add_executable(CPlusKnowledge src/cplus/day01/main.cpp src/cplus/day01/main.cpp 
         src/c/day02/test.h src/c/day02/test2.h src/c/day02/main3.c src/c/day02/main1.c src/c/day02/main2.c src/c/day02/main4.c src/c/day02/main6.c
         src/c/day02/main7.c src/c/day02/main8.c src/c/day02/main9.c src/c/day03/main.c src/c/day03/main2.c src/c/day03/main3.c src/c/day04/main.c
         src/c/day04/main2.c src/c/day04/main3.c src/c/day05/main.c src/c/day05/main1.c src/c/day06/main.c src/c/day06/main2.c src/c/day06/main3.c
-        src/c/day06/main4.c src/ndk/dynamic/dyReg.c)
+        src/c/day06/main4.c src/ndk/dynamic/dyReg.c src/ndk/jnienv/JNIEnv.cpp src/ndk/invoke/invoke.c src/ndk/invoke/invoke.h)
 
 #创建firstLib库
 add_library(firstLib SHARED src/ndk/static/Register.h src/ndk/static/Register.c)
 add_library(firstdyLib SHARED src/ndk/dynamic/dyReg.c)
+add_library(invokeLib SHARED src/ndk/invoke/invoke.h src/ndk/invoke/invoke.c)
